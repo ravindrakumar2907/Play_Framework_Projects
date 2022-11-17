@@ -1,0 +1,24 @@
+@(error: String)
+<html>
+	<head>
+		<title>Login</title>
+	</head>
+	<body>
+	<h3>Login</h3><br/>
+		@helper.form(action = routes.LoginController.loginSubmit, Symbol("id") -> "myForm") {
+  			<label > Username</label>
+  			<input type="text" name="email"  placeholder="Enter Email" /><br/><br/>
+  			<label > Password</label>
+  			<input type="password" name="password"   placeholder="Enter Password" /><br/><br/>
+  			<input type="submit" />
+		}
+	</body>
+</html>
+
+
+
+
+
+
+
+
